@@ -1,0 +1,49 @@
+.slider-content {
+    min-height: 100vh;
+    background-image: url(/img/picture1.jpg);
+    background-position: 20%;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+
+    .container {
+        position: relative;
+        
+        .titles {
+            position: absolute;
+            right: 0;
+            top: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #F8F1EA;
+        max-width: 210px;
+        margin-bottom: 21px;
+    }
+
+    button {
+        width: 154px;
+        min-height: 40px;
+        border: 2px solid #FFFFFF;
+        background-color: transparent;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+        
+
+
+}

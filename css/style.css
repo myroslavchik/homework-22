@@ -1,0 +1,253 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header {
+  background-color: #F8F1EA;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+header .logo {
+  width: 100px;
+  height: 19px;
+}
+header .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+header .icon:last-child {
+  margin-right: 0;
+}
+
+header .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #F8F1EA;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+header .menu .menu-list {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .menu .menu-list .menu-list__item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 20px;
+  color: #000000;
+}
+header .menu .menu-list .menu-list__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+header .menu.active {
+  transform: translateX(0);
+}
+header .menu li {
+  list-style-type: none;
+}
+header .menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+header .menu-btn span {
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  transition: all 0.5s;
+}
+header .menu-btn span:nth-of-type(2) {
+  top: calc(50% - 7px);
+}
+header .menu-btn span:nth-of-type(3) {
+  top: calc(50% + 7px);
+}
+header .menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+header .menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+header .menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.slider-content {
+  min-height: 100vh;
+  background-image: url(/img/picture1.jpg);
+  background-position: 20%;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.slider-content .container {
+  position: relative;
+}
+.slider-content .container .titles {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.slider-content h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #F8F1EA;
+  max-width: 210px;
+  margin-bottom: 21px;
+}
+.slider-content button {
+  width: 154px;
+  min-height: 40px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.products .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.products h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.products .guitars {
+  margin-bottom: 72px;
+}
+.products .guitars__item {
+  width: 301px;
+  height: 491px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  margin-bottom: 10px;
+  border: 1px solid #F8F1EA;
+  margin-bottom: 20px;
+}
+.products .guitars__item img {
+  margin-bottom: 20px;
+}
+.products .guitars__item h3 {
+  text-transform: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.products .guitars__item h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+}
+.products .slick-dots li button:before {
+  color: #F16A50;
+  font-size: 12px;
+}
+.products button {
+  width: 154px;
+  min-height: 40px;
+  border: 2px solid #000000;
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */
