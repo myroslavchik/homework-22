@@ -40,6 +40,10 @@
         li:last-child {
             margin-bottom: 0;
         }
+
+        .menu-list__item:hover a {
+            color: #F16A50;
+        }
     }
 
     .contacts {
@@ -53,6 +57,10 @@
 
         .contacts__item:last-child {
             margin-bottom: 0;
+        }
+
+        .contacts__item:hover a {
+            color: #F16A50;
         }
 
         li, a {
@@ -72,6 +80,22 @@
             &__item:not(:last-child) {
                 margin-right: 10px;
             }
+        }
+
+        .social-list__item .fill {
+            fill: #F8F1EA;
+        }
+
+        .social-list__item:hover .fill {
+            fill: #F16A50;
+        }
+
+        .social-list__item .stroke {
+            stroke: #F8F1EA;
+        }
+
+        .social-list__item:hover .stroke {
+            stroke: #F16A50;
         }
 
         .icon {

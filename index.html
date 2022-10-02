@@ -20,10 +20,18 @@
             <div class="menu">
                 <nav>
                     <ul class="menu-list">
-                        <li class="menu-list__item">Home</li>
-                        <li class="menu-list__item">Catalog</li>
-                        <li class="menu-list__item">News</li>
-                        <li class="menu-list__item">Contacts</li>
+                        <li class="menu-list__item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#catalog">Catalog</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#news">News</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#contact">Contacts</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -43,7 +51,12 @@
         </div>
     </header>
     <main>
-        <section class="slider-content">
+        <section class="slider-content" id="news">
+            <div class="slider">
+                <div class="slide" style="background-image: url(./img/picture1.jpg)"></div>
+                <div class="slide" style="background-image: url(./img/picture2.jpg)"></div>
+                <div class="slide" style="background-image: url(./img/picture3.jpg)"></div>
+            </div>
             <div class="container">
                 <div class="titles">
                     <h2>Find your own style</h2>
@@ -51,7 +64,7 @@
                 </div>
             </div>
         </section>
-        <section class="products">
+        <section class="products" id="catalog">
             <div class="container">
                 <h3>New Arrivals</h3>
                 <div class="guitars">
@@ -86,7 +99,7 @@
                         <h4>€1.499,00</h4>
                     </div>
                 </div>
-                <button>View more</button>
+                <button class="button">View more</button>
             </div>
         </section>
         <section class="partners">
@@ -123,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <section class="footer">
+        <section class="footer" id="contact">
             <div class="container">
                 <a href="#">
                     <img src="./img/logo-white.svg" alt="Logo Onwave">
@@ -151,35 +164,35 @@
                             <ul class="social-list">
                                 <li class="social-list__item">
                                     <a href="#">
-                                        <svg class="icon">
+                                        <svg class="icon fill">
                                             <use xlink:href="img/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list__item">
                                     <a href="#">
-                                        <svg class="icon">
+                                        <svg class="icon fill">
                                             <use xlink:href="img/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list__item">
                                     <a href="#">
-                                        <svg class="icon">
+                                        <svg class="icon fill">
                                             <use xlink:href="img/sprite.svg#pinterest"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-list__item active">
+                                <li class="social-list__item">
                                     <a href="#">
-                                        <svg class="icon">
+                                        <svg class="icon stroke">
                                             <use xlink:href="img/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list__item">
                                     <a href="#">
-                                        <svg class="icon">
+                                        <svg class="icon stroke">
                                             <use xlink:href="img/sprite.svg#youtube"></use>
                                         </svg>
                                     </a>

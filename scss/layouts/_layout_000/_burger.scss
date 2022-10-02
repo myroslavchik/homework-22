@@ -17,13 +17,18 @@ header {
             flex-direction: column;
             align-items: center;
 
-            .menu-list__item {
+            .menu-list__item a {
+                text-decoration: none;
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 26px;
                 line-height: 20px;
                 color: #000000;
+            }
+
+            .menu-list__item:hover a {
+                color: #F16A50;
             }
 
             .menu-list__item:not(:last-child) {
@@ -47,6 +52,7 @@ header {
         z-index:2;
         overflow: hidden;
         z-index: 999;
+        cursor: pointer;
     }
     .menu-btn span {
         width: 25px;

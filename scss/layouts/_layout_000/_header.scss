@@ -17,6 +17,12 @@ header {
         width: 20px;
         height: 20px;
         margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .icon:hover {
+        fill: #F16A50;
+        stroke: #F16A50;;
     }
 
     .icon:last-child {

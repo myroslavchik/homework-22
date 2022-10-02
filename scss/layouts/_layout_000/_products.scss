@@ -103,7 +103,7 @@
         font-size: 12px;
       }
 
-    button {
+    .button {
         width: 154px;
         min-height: 40px;
         border: 2px solid #000000;
@@ -119,6 +119,13 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #F16A50;
+        color: #ffffff;
+        border: 2px solid #ffffff;
     }
 
 

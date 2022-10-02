@@ -10,6 +10,19 @@ menuBtn.addEventListener('click', function(){
 	menu.classList.toggle('active');
 })
 
+/// SLIDER main 
+
+$('.slider').slick({
+  arrows:false,
+  dots:true,
+  infinite: true,
+  speed: 400,
+  slidesToShow: 1,
+  autoplaySpeed: 4000,
+  adaptiveHeight: true,
+  autoplay: true,
+
+})
 
 /// SLIDER Guitars
 
@@ -25,7 +38,6 @@ $(document).ready(function(){
     autoplaySpeed: 4000,
   });
 
-
 /// SLIDER Companies
 
 $('.company').slick({
@@ -40,8 +52,6 @@ $('.company').slick({
 });
 
 
-
 })
-
 
 });
