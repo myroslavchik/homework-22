@@ -33,9 +33,11 @@ header {
     }
     .menu.active {
         transform: translateX(0);
+        z-index: 999;
     }
     .menu li {
         list-style-type: none;
+        
     }
 
     .menu-btn {
@@ -44,6 +46,7 @@ header {
         position: relative;
         z-index:2;
         overflow: hidden;
+        z-index: 999;
     }
     .menu-btn span {
         width: 25px;

@@ -97,6 +97,7 @@ header .menu .menu-list .menu-list__item:not(:last-child) {
 }
 header .menu.active {
   transform: translateX(0);
+  z-index: 999;
 }
 header .menu li {
   list-style-type: none;
@@ -107,6 +108,7 @@ header .menu-btn {
   position: relative;
   z-index: 2;
   overflow: hidden;
+  z-index: 999;
 }
 header .menu-btn span {
   width: 25px;
@@ -197,7 +199,44 @@ header .menu-btn.active span:nth-of-type(3) {
 .products .guitars {
   margin-bottom: 72px;
 }
+.products .sold {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 20px;
+  background-color: #F8F1EA;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.products .stock {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 20px;
+  background-color: #F16A50;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F8F1EA;
+}
 .products .guitars__item {
+  position: relative;
   width: 301px;
   height: 491px;
   display: flex;
