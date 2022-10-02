@@ -12,7 +12,17 @@
         text-transform: uppercase;
         color: #000000;
         padding-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+    }
+
+    .company__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        width: 50px;
+        height: 90px;
     }
 
 

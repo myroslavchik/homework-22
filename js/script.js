@@ -17,10 +17,12 @@ $(document).ready(function(){
   $('.guitars').slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 400,
     slidesToShow: 1,
     adaptiveHeight: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
   });
 
 
@@ -33,7 +35,8 @@ $('.company').slick({
   slidesToShow: 1,
   adaptiveHeight: true,
   arrows: false,
-  centerMode: true
+  centerMode: true,
+  autoplay: true
 });
 
 
