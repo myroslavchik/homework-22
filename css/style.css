@@ -248,6 +248,104 @@ header .menu-btn.active span:nth-of-type(3) {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.partners {
+  background-color: #F8F1EA;
+  padding-bottom: 50px;
+}
+.partners h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.partners .slick-dots li button:before {
+  color: #F16A50;
+  font-size: 12px;
+}
+
+.footer {
+  background-color: #35312D;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.footer .main-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.footer .menu-list {
+  display: flex;
+  flex-direction: column;
+}
+.footer .menu-list li a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F8F1EA;
+  margin-bottom: 10px;
+}
+.footer .menu-list li {
+  margin-bottom: 10px;
+}
+.footer .menu-list li:last-child {
+  margin-bottom: 0;
+}
+.footer .contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer .contacts .contacts__item {
+  margin-bottom: 25px;
+}
+.footer .contacts .contacts__item:last-child {
+  margin-bottom: 0;
+}
+.footer .contacts li, .footer .contacts a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #F8F1EA;
+}
+.footer .contacts .social-list {
+  display: flex;
+  flex-direction: row;
+}
+.footer .contacts .social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer .contacts .icon {
+  width: 20px;
+  height: 20px;
+}
+.footer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #F8F1EA;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,7 +11,7 @@ menuBtn.addEventListener('click', function(){
 })
 
 
-/// SLIDER
+/// SLIDER Guitars
 
 $(document).ready(function(){
   $('.guitars').slick({
@@ -22,6 +22,20 @@ $(document).ready(function(){
     adaptiveHeight: true,
     arrows: false,
   });
+
+
+/// SLIDER Companies
+
+$('.company').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  arrows: false,
+  centerMode: true
+});
+
 
 
 })
