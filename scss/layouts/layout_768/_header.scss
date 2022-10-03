@@ -1,0 +1,39 @@
+header {
+
+    .menu {	
+        position: relative;
+        top: 0;
+        left: 0;
+        width: unset;
+        height: unset;
+        padding: 0;
+        transform: translateX(0);
+
+        .menu-list {
+            padding-top: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .menu-list__item {
+                margin-bottom: 0 !important;
+                padding: 20px 15px;
+
+                a {
+                    font-size: 16px;
+                    }
+            }
+
+            .menu-list__item:hover {
+                background-color: #F16A50;
+                cursor: pointer;
+            }
+
+            .menu-list__item:hover a {
+                color: #fff;
+            }
+        }
+    } 
+}
+

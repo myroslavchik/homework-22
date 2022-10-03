@@ -1,0 +1,32 @@
+.footer {
+    position: relative;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+    img {
+        margin-bottom: 0;
+    }
+
+    .main-list {
+        margin-bottom: 0;
+    }
+
+    .menu-list {
+        margin-right: 160px;
+    }
+
+    .mobile-p {
+        display: none;
+    }
+
+    }
+
+    .desk-p {
+        display: block;
+    }
+}
