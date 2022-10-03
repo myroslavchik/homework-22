@@ -66,7 +66,7 @@ $('.company').slick({
   dots: false,
   infinite: true,
   speed: 400,
-  slidesToShow: 6,
+  slidesToShow: 8,
   adaptiveHeight: true,
   arrows: true,
   centerMode: false,
@@ -75,16 +75,19 @@ $('.company').slick({
   nextArrow:"<img class='a-right control-c next slick-next' src='./img/next.png'>",
   responsive: [
     {
+      breakpoint: 1170,
+      settings: {
+      slidesToShow: 6, 
+      dots: false,
+      arrows: true,
+      }
+    },
+    {
       breakpoint: 768,
       settings: {
       slidesToShow: 1,
-      speed: 400,
-      centerMode: false, 
-      slidesToScroll: 1,
       dots: true,
       arrows: false,
-      adaptiveHeight: true,
-      autoplay: true,
       }
     }
    ]
