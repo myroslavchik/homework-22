@@ -425,6 +425,7 @@ header .menu-btn.active span:nth-of-type(3) {
 }
 .footer .contacts .social-list__item .stroke {
   stroke: #F8F1EA;
+  fill: transparent;
 }
 .footer .contacts .social-list__item:hover .stroke {
   stroke: #F16A50;
