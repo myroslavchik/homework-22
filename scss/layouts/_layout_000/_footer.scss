@@ -1,14 +1,24 @@
 .footer {
-
+    position: relative;
     background-color: #35312D;
     padding-top: 50px;
     padding-bottom: 30px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
+    }
+
+    .desk {
+        display: none;
     }
 
     .main-list {
@@ -114,7 +124,4 @@
         color: #F8F1EA;
     }
 
-    .desk-p {
-        display: none;
-    }
 }

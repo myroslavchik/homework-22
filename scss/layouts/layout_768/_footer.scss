@@ -1,32 +1,48 @@
 .footer {
     position: relative;
 
+    .mobile {
+        display: none;
+    }
+
+    .desk {
+        display: block;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
         justify-content: space-between;
         margin-bottom: 40px;
 
     img {
         margin-bottom: 0;
+        margin-right: 200px;
     }
 
     .main-list {
         margin-bottom: 0;
     }
 
+    .left-side {
+        display: flex;
+        flex-direction: row;
+    }
+
     .menu-list {
-        margin-right: 160px;
+        margin-right: 0;
+        margin-left: 0;
+
+        a {
+            font-size: 16px;
+        }
     }
 
-    .mobile-p {
-        display: none;
+    .contacts__item {
+        font-size: 20px;
     }
+
 
     }
 
-    .desk-p {
-        display: block;
-    }
 }

@@ -59,6 +59,11 @@
         color: #F8F1EA;
     }
 
+    .guitars__item:hover {
+        border-color: #F16A50;
+        cursor: pointer;
+    }
+
     .guitars__item {
         position: relative;
         width: 301px;

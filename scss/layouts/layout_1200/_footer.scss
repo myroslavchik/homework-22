@@ -1,0 +1,51 @@
+.footer {
+
+    .mobile {
+        display: none;
+    }
+
+    .desk {
+        display: block;
+    }
+
+    .container {
+
+            a img {
+                margin-bottom: 35px;
+                margin-right: 0;
+            }
+
+        .menu-list {
+            margin-right: 0;
+        }
+
+        .menu-list__item a {
+
+            font-size: 20px;
+        }
+
+        .left-side {
+            display: block;
+        }
+
+        .contacts {
+
+            .cont {
+                 margin-bottom: 45px;
+            }
+
+            li, a {
+                font-size: 26px;
+            }
+
+            .social-list__item svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
