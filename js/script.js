@@ -44,7 +44,7 @@ $(document).ready(function(){
         settings: {
         slidesToShow: 3,
         centerMode: false, 
-        dots: true,
+        dots: false,
         arrows: true,
         }
       },

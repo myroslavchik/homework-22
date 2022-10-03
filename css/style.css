@@ -452,6 +452,10 @@ header .menu-btn.active span:nth-of-type(3) {
     margin: 0 auto;
     padding: 0 10px;
   }
+  header .icons svg {
+    width: 27px;
+    height: 27px;
+  }
   header .logo {
     width: 168px;
     height: 31px;
@@ -536,6 +540,10 @@ header .menu-btn.active span:nth-of-type(3) {
     text-align: center;
     text-transform: uppercase;
     max-width: 350px;
+  }
+  header .menu .menu-list .menu-list__item a {
+    font-weight: 500;
+    font-size: 20px;
   }
 }
 
