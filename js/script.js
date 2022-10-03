@@ -31,7 +31,7 @@ $(document).ready(function(){
     dots: false,
     infinite: true,
     speed: 400,
-    slidesToShow: 5,
+    slidesToShow: 4,
     adaptiveHeight: true,
     arrows: true,
     autoplay: true,
@@ -45,7 +45,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         centerMode: false, 
         dots: true,
-        arrows: false,
+        arrows: true,
         }
       },
       {
