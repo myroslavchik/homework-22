@@ -149,11 +149,20 @@ header .menu-btn.active span:nth-of-type(3) {
 }
 
 .slider-content {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   position: relative;
 }
+.slider-content .slider {
+  margin-bottom: 0;
+}
 .slider-content .slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 60px;
+  padding-right: 15px;
   min-height: 100vh;
+  background-size: cover;
   background-position: 20%;
   background-repeat: no-repeat;
 }
@@ -164,14 +173,11 @@ header .menu-btn.active span:nth-of-type(3) {
   color: #F16A50;
   font-size: 12px;
 }
-.slider-content .container .titles {
-  position: absolute;
-  right: 0;
-  top: 60px;
+.slider-content .titles {
   display: flex;
   flex-direction: column;
 }
-.slider-content .container h2 {
+.slider-content h2 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -182,7 +188,7 @@ header .menu-btn.active span:nth-of-type(3) {
   max-width: 210px;
   margin-bottom: 21px;
 }
-.slider-content .container button {
+.slider-content button {
   width: 154px;
   min-height: 40px;
   border: 2px solid #FFFFFF;
@@ -197,7 +203,7 @@ header .menu-btn.active span:nth-of-type(3) {
   color: #FFFFFF;
   cursor: pointer;
 }
-.slider-content .container button:hover {
+.slider-content .btnmore:hover {
   background-color: #F16A50;
   color: #ffffff;
   border: 2px solid #F16A50;
@@ -269,7 +275,7 @@ header .menu-btn.active span:nth-of-type(3) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 15px;
+  margin: 0 10px;
   margin-bottom: 10px;
   border: 1px solid #F8F1EA;
   margin-bottom: 20px;
@@ -489,7 +495,7 @@ header .menu-btn.active span:nth-of-type(3) {
   }
   header .menu .menu-list .menu-list__item {
     margin-bottom: 0 !important;
-    padding: 20px 15px;
+    padding: 30px 15px;
   }
   header .menu .menu-list .menu-list__item a {
     font-size: 16px;
@@ -504,9 +510,9 @@ header .menu-btn.active span:nth-of-type(3) {
   header .menu-btn {
     display: none;
   }
-  .slider-content .container .titles {
-    right: 82px;
-    top: 60px;
+  .slider-content .slide {
+    padding-top: 60px;
+    padding-right: 82px;
   }
   .footer {
     position: relative;
@@ -546,14 +552,16 @@ header .menu-btn.active span:nth-of-type(3) {
   }
 }
 @media only screen and (min-width: 1170px) {
-  .slider-content .container .titles {
-    right: 100px;
-    top: 60px;
+  .slider-content .slide {
+    padding-top: 120px;
+    padding-right: 100px;
+  }
+  .slider-content .titles {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .slider-content .container h2 {
+  .slider-content h2 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
@@ -561,7 +569,10 @@ header .menu-btn.active span:nth-of-type(3) {
     line-height: 61px;
     text-align: center;
     text-transform: uppercase;
-    max-width: 350px;
+    max-width: 400px;
+  }
+  header .container {
+    min-height: 80px;
   }
   header .menu .menu-list .menu-list__item a {
     font-weight: 500;

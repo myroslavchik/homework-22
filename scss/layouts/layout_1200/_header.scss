@@ -1,6 +1,11 @@
 header {
 
+    .container {
+        min-height: 80px;
+    }
+
     .menu {	
+        
         .menu-list {
             .menu-list__item a {
                 font-weight: 500;
