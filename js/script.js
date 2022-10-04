@@ -21,7 +21,8 @@ $('.slider').slick({
   autoplaySpeed: 4000,
   adaptiveHeight: true,
   autoplay: true,
-
+  fade: true,
+  cssEase: 'linear'
 })
 
 /// SLIDER Guitars
@@ -36,6 +37,7 @@ $(document).ready(function(){
     arrows: true,
     autoplay: true,
     autoplaySpeed: 4000,
+    draggable: true,
     prevArrow:"<img class='a-left control-c prev slick-prev' src='./img/prev.png'>",
     nextArrow:"<img class='a-right control-c next slick-next' src='./img/next.png'>",
     responsive: [

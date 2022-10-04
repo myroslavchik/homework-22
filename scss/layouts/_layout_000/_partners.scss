@@ -11,7 +11,7 @@
         font-size: 20px;
         text-align: center;
         text-transform: uppercase;
-        color: #000000;
+        color: $black;
         padding-top: 50px;
         margin-bottom: 30px;
     }
@@ -28,7 +28,7 @@
     }
 
     .slick-dots li button:before {
-        color: #F16A50;
+        color: $tomato-light;
         font-size: 12px;
       }
 

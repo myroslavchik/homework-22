@@ -52,7 +52,7 @@
         }
 
         .menu-list__item:hover a {
-            color: #F16A50;
+            color: $tomato-light;
         }
     }
 
@@ -70,7 +70,7 @@
         }
 
         .contacts__item:hover a {
-            color: #F16A50;
+            color: $tomato-light;
         }
 
         li, a {
@@ -97,7 +97,7 @@
         }
 
         .social-list__item:hover .fill {
-            fill: #F16A50;
+            fill: $tomato-light;
         }
 
         .social-list__item .stroke {
@@ -106,7 +106,7 @@
         }
 
         .social-list__item:hover .stroke {
-            stroke: #F16A50;
+            stroke: $tomato-light;
         }
 
         .icon {

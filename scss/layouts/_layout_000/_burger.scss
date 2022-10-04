@@ -28,7 +28,7 @@ header {
             }
 
             .menu-list__item:hover a {
-                color: #F16A50;
+                color: $tomato-light;
             }
 
             .menu-list__item:not(:last-child) {
