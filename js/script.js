@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function() {
 
 /// BUTTON
 
@@ -27,7 +27,6 @@ $('.slider').slick({
 
 /// SLIDER Guitars
 
-$(document).ready(function(){
   $('.guitars').slick({
     dots: false,
     infinite: true,
@@ -95,7 +94,5 @@ $('.company').slick({
    ]
 });
 
-
-})
 
 });
