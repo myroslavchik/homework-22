@@ -1,4 +1,9 @@
-header {
+.header {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
 
     .icons svg {
         width: 27px;
@@ -29,15 +34,18 @@ header {
             .menu-list__item {
                 margin-bottom: 0 !important;
                 padding: 30px 15px;
+                transition: .3s ease-in;
 
                 a {
                     font-size: 16px;
-                    }
+                }
             }
 
-            .menu-list__item:hover {
-                background-color: #F16A50;
-                cursor: pointer;
+            @media (any-hover: hover) {
+                .menu-list__item:hover {
+                    background-color: #F16A50;
+                    cursor: pointer;
+                }
             }
 
             .menu-list__item:hover a {

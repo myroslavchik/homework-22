@@ -4,3 +4,39 @@
     padding: 0 25px;
 }
 
+// btn up
+
+.btn-up {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #000;
+    background-color: #ffffff67;
+    border-radius: 50px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+    cursor: pointer;
+    z-index: 99;
+
+    .fa-solid {
+        transition: .3s ease;
+    }
+}
+
+@media (any-hover: hover) {
+    
+    .btn-up:hover {
+        border-color: #F16A50;
+
+        .fa-solid {
+            scale: 1.1;
+            color: #F16A50;
+        }
+    }
+}
+

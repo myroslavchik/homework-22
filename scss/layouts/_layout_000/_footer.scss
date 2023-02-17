@@ -80,6 +80,7 @@
             font-weight: 500;
             font-size: 20px;
             color: #F8F1EA;
+            transition: .3s ease-in;
         }
 
         .social-list {
@@ -94,15 +95,19 @@
 
         .social-list__item .fill {
             fill: #F8F1EA;
+            transition: .3s ease-in;
         }
 
-        .social-list__item:hover .fill {
-            fill: $tomato-light;
+        @media (any-hover: hover) {
+            .social-list__item:hover .fill {
+                fill: $tomato-light;
+            }
         }
 
         .social-list__item .stroke {
             stroke: #F8F1EA;
             fill: transparent;
+            transition: .3s ease-in;
         }
 
         .social-list__item:hover .stroke {

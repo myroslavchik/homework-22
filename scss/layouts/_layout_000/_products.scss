@@ -57,11 +57,14 @@
         text-align: center;
         text-transform: uppercase;
         color: #F8F1EA;
+        transition: .3s ease-in;
     }
 
-    .guitars__item:hover {
-        border-color: $tomato-light;
-        cursor: pointer;
+    @media (any-hover:hover) {
+        .guitars__item:hover {
+            border-color: $tomato-light;
+            cursor: pointer;
+        }
     }
 
     .guitars__item {
@@ -76,6 +79,7 @@
         margin-bottom: 10px;
         border: 1px solid #F8F1EA;
         margin-bottom: 20px;
+        transition: .3s ease-in;
 
         img {
             margin-bottom: 20px;
@@ -109,8 +113,9 @@
       }
 
     .button {
+        position: relative;
         width: 154px;
-        min-height: 40px;
+        min-height: 50px;
         border: 2px solid $black;
         background-color: transparent;
         font-family: 'Montserrat';
@@ -125,11 +130,35 @@
         margin-right: auto;
         margin-bottom: 50px;
         cursor: pointer;
+        transition: .3s ease-in;
+        z-index: 1;
+        overflow: hidden;
     }
 
-    .button:hover {
+    .button::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
         background-color: $tomato-light;
-        color: #ffffff;
-        border: 2px solid #ffffff;
+        transition: .3s ease-in;
+        z-index: -1;
+        transform: rotate(145deg);
+        scale: 0;
+    }
+
+    @media (any-hover: hover) {
+        .button:hover {
+            color: #ffffff;
+            border-color: transparent;
+        }
+
+        .button:hover::after {
+            height: 100%;
+            transform: rotate(0);
+            scale: 1; 
+        }
     }
 }

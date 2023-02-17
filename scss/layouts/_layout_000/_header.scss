@@ -1,9 +1,12 @@
-header {
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
     background-color: #F8F1EA;
 
     .container {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 90px 50px;
         align-items: center;
         min-height: 60px;
     }
@@ -18,11 +21,13 @@ header {
         height: 20px;
         margin-right: 15px;
         cursor: pointer;
+        transition: .3s ease-in;
     }
 
-    .icon:hover {
-        fill: $tomato-light;
-        stroke: $tomato-light;
+    @media (any-hover: hover) {
+        .icon:hover {
+            scale: 1.1;
+        }
     }
 
     .icon:last-child {
