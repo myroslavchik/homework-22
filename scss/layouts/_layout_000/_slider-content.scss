@@ -30,6 +30,7 @@
         .titles {
             display: flex;
             flex-direction: column;
+            padding-top: 60px;
         }
 
     h2 {
@@ -46,7 +47,7 @@
 
     button {
         width: 154px;
-        min-height: 40px;
+        min-height: 50px;
         border: 2px solid #FFFFFF;
         background-color: transparent;
         font-family: 'Montserrat';
@@ -58,13 +59,26 @@
         text-transform: uppercase;
         color: #FFFFFF;
         cursor: pointer;
+        transition: .3s ease-in;
     }
 
-    .btnmore:hover {
-        background-color: #F16A50;
-        color: #ffffff;
-        border: 2px solid #F16A50;
-    }
+        @media (any-hover: hover) {
+            .btnmore:hover {
+                background-color: #F16A50;
+                color: #ffffff;
+                border: 2px solid #F16A50;
+            }
 
+            // Animate the size, outside
+            .btnmore:hover, 
+            .btnmore:focus {
+                animation: pulse 1s;
+                box-shadow: 0 0 0 2em transparent;
+            }
+
+            @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 #ffffff; }
+            }
+        }
     }
     

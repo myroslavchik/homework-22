@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>jQuery_Slick-Slider</title>
+    <title>Guitars</title>
 </head>
 <body>
-    <header>
+    <h1 class="visually-hidden">Guitar site</h1>
+    <header class="header">
         <div class="container">
             <a href="#">
-                <svg class="logo">
-                    <use xlink:href="./img/sprite.svg#logo"></use>
-                </svg>
+                <img class="logo" src="./img/logo.png" alt="Logo OnWave">
             </a>
             <div class="menu">
                 <nav>
+                    <h2 class="visually-hidden">Menu</h2>
                     <ul class="menu-list">
                         <li class="menu-list__item">
                             <a href="#">Home</a>
@@ -71,6 +75,9 @@
                         <button class="btnmore">View more</button>
                     </div>
                 </div>
+            </div>
+            <div class="btn-up">
+                <i class="fa-solid fa-guitar"></i>
             </div>
         </section>
         <section class="products" id="catalog">
@@ -147,12 +154,13 @@
         </section>
         <section class="footer" id="contact">
             <a href="#" class="mobile">
-                <img src="./img/logo-white.svg" alt="Logo Onwave">
+                <img src="./img/logo-light.png" alt="Logo Onwave">
             </a>
             <div class="container">
+                <h2 class="visually-hidden">Contacts</h2>
                 <div class="left-side">
                     <a href="#" class="desk">
-                        <img src="./img/logo-white.svg" alt="Logo Onwave">
+                        <img src="./img/logo-light.png" alt="Logo Onwave">
                     </a>
                     <ul class="menu-list">
                         <li class="menu-list__item active">
@@ -220,9 +228,9 @@
             <p class="desk-p">© Copyright 2022. All rights reserved.</p>
         </section>
     </main>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

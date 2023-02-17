@@ -1,16 +1,45 @@
-document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function() {
 
-/// BUTTON
+// button
 
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
+const MENULINK = document.querySelectorAll('.menu-list__item');
 
 menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 })
 
-/// SLIDER main 
+for (let i = 0; i < MENULINK.length; i++) {
+  MENULINK[i].addEventListener('click', () => {
+    menuBtn.classList.remove('active');
+	  menu.classList.remove('active');
+  })
+}
+
+
+// header
+
+const HEADER = document.querySelector('.header');
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    HEADER.style.background = ' #f8f1ea4f';
+  } else {
+    HEADER.style.background = '#F8F1EA';
+  }
+}
+
+// top button
+
+const UPBTN = document.querySelector('.btn-up');
+UPBTN.addEventListener('click', () => {
+  document.body.scrollTo = 0;
+  document.documentElement.scrollTop = 0;
+})
+
+// alider main
 
 $('.slider').slick({
   arrows:false,
@@ -25,9 +54,8 @@ $('.slider').slick({
   cssEase: 'linear'
 })
 
-/// SLIDER Guitars
+// SLIDER Guitars
 
-$(document).ready(function(){
   $('.guitars').slick({
     dots: false,
     infinite: true,
@@ -95,7 +123,5 @@ $('.company').slick({
    ]
 });
 
-
-})
 
 });

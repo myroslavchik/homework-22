@@ -25,11 +25,23 @@
         width: 50px;
         height: 90px;
         cursor: pointer;
+
+        img {
+            transition: .3s ease;
+        }
     }
 
     .slick-dots li button:before {
         color: $tomato-light;
         font-size: 12px;
       }
+
+    @media (any-hover: hover) {
+        .company__item:hover {
+            img {
+                scale: 1.1;
+            }
+        }
+    }
 
 }
